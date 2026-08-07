@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyería de Plata | Anillos, Pulseras y Aretes de Plata con Diseño Único</title>
+  <meta name="description" content="Joyería de Plata: piezas únicas en plata fina, hechas con artesanía cuidada y atención al detalle. Anillos, pulseras y aretes para regalar o lucir. Consulta y pide la tuya por WhatsApp.">
+  <meta name="keywords" content="joyería de plata, anillos de plata, pulseras de plata, aretes de plata, joyas artesanales, joyería fina, regalo de plata, accesorios de plata">
+  <meta name="author" content="Joyería de Plata">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Joyería de Plata | Diseños únicos en plata fina">
+  <meta property="og:description" content="Piezas en plata con artesanía cuidada y atención al detalle. Descubre anillos, pulseras y aretes pensados para durar.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="assets/img/logo.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="apple-touch-icon" href="assets/img/logo.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring loader-ring--2"></div>
+      <img src="assets/img/logo.svg" alt="" class="loader-logo">
+      <p class="loader-text">Cargando<span class="loader-dots"><span>.</span><span>.</span><span>.</span></span></p>
+    </div>
+    <div class="loader-curtain loader-curtain--l"></div>
+    <div class="loader-curtain loader-curtain--r"></div>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Joyería de Plata — Inicio">
+        <img src="assets/img/logo.svg" alt="Joyería de Plata" class="brand-logo">
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#colecciones" class="nav-link">Colecciones</a></li>
+          <li><a href="#proceso" class="nav-link">Proceso</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-nav js-whatsapp-link" data-wa-message="Hola, me gustaría conocer más sobre sus piezas de plata." target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1920&q=80" alt="" class="hero-bg-img" data-parallax data-speed="0.25">
+        <div class="hero-media-overlay"></div>
+      </div>
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal" data-reveal>Joyería de Plata — Diseños únicos en plata fina</p>
+
+        <h1 class="hero-title reveal" data-reveal>
+          <span class="gradient-text">Elegancia que se lleva,</span><br>
+          <span class="gradient-text">plata que se <em class="text-gold">admira</em>.</span>
+        </h1>
+
+        <p class="hero-typewriter reveal" data-reveal>
+          Piezas pensadas para <span class="typewriter-word" id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </p>
+
+        <p class="hero-desc reveal" data-reveal>
+          En Joyería de Plata transformamos la plata en piezas con carácter propio — diseños cuidados al detalle, hechos para quienes buscan algo más que un accesorio: una expresión de su estilo y buen gusto.
+        </p>
+
+        <div class="hero-cta reveal" data-reveal>
+          <a href="#" class="btn btn-primary btn-lg js-whatsapp-link" data-wa-message="Hola, me gustaría ver el catálogo de Joyería de Plata." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+            Solicitar Catálogo por WhatsApp
+          </a>
+          <a href="#colecciones" class="btn btn-outline btn-lg">Explorar Colecciones</a>
+        </div>
+
+        <ul class="hero-trust reveal" data-reveal>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9 16.2-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Diseños únicos</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9 16.2-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Atención personalizada</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9 16.2-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Empaque especial de regalo</li>
+        </ul>
+      </div>
+
+      <a href="#nosotros" class="scroll-indicator" aria-label="Desplázate hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ SOBRE NOSOTROS ============ -->
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-media reveal" data-reveal>
+          <div class="about-media-frame">
+            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=80" alt="Mujer luciendo un collar de plata con dije, ejemplo del estilo elegante y minimalista de Joyería de Plata" loading="lazy" data-parallax data-speed="0.12">
+          </div>
+          <div class="about-media-badge">
+            <span class="badge-number">✓</span>
+            <span class="badge-label">Artesanía cuidada<br>en cada pieza</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow reveal" data-reveal>Sobre Joyería de Plata</p>
+          <h2 class="section-title reveal" data-reveal>Diseños con identidad. <span class="text-gold">Elegancia</span> que perdura.</h2>
+          <p class="section-desc reveal" data-reveal>
+            Joyería de Plata nace para quienes buscan accesorios de alta calidad y estilo distintivo. Cada pieza se trabaja con artesanía cuidada y atención al detalle, porque no solo vendemos joyas: creamos una experiencia de compra que resuena con la elegancia y el buen gusto de quien la vive.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 3 6v6c0 5.1 3.6 9.3 9 10 5.4-.7 9-4.9 9-10V6l-9-4Zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7Z"/></svg>
+              </div>
+              <div>
+                <h3>Diseño con carácter</h3>
+                <p>Piezas pensadas para ser distintivas, no una copia más de catálogo genérico.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1 15 8l7.5 1-5.5 5.2L18.5 22 12 18l-6.5 4 1.5-7.8L1.5 9 9 8Z"/></svg>
+              </div>
+              <div>
+                <h3>Atención al detalle</h3>
+                <p>Cuidamos cada etapa, del diseño al acabado final, sin atajos.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c-3.5 4.5-7 8.6-7 12.5A7 7 0 0 0 12 22a7 7 0 0 0 7-7.5c0-3.9-3.5-8-7-12.5Zm0 17a4.5 4.5 0 0 1-4.5-4.6c.05-1.15.55-2.1 1.5-3.4-.2 2.3.9 4.1 3 4.5a.5.5 0 0 1-.15.98A4.9 4.9 0 0 1 8.5 14.9c0 .05 0 .1 0 .15A3.5 3.5 0 0 0 12 18.5a1 1 0 0 1 0 .5Z"/></svg>
+              </div>
+              <div>
+                <h3>Experiencia premium</h3>
+                <p>Comprar aquí es parte de la experiencia: elegancia en cada detalle, del catálogo al empaque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ ELEGIRNOS ============ -->
+    <section class="why-us">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>¿Por qué Joyería de Plata?</p>
+          <h2 class="section-title reveal" data-reveal>Lo que hace especial <span class="text-gold">cada pieza</span>.</h2>
+        </div>
+
+        <div class="numbered-grid">
+          <div class="numbered-card reveal" data-reveal>
+            <span class="numbered-card-num">01</span>
+            <h3>Diseño Único</h3>
+            <p>Cada pieza busca tener una identidad propia, alejada de lo genérico y lo masivo.</p>
+          </div>
+          <div class="numbered-card reveal" data-reveal>
+            <span class="numbered-card-num">02</span>
+            <h3>Artesanía Cuidada</h3>
+            <p>El detalle es el hilo conductor de todo lo que hacemos, en cada acabado y terminación.</p>
+          </div>
+          <div class="numbered-card reveal" data-reveal>
+            <span class="numbered-card-num">03</span>
+            <h3>Plata Seleccionada</h3>
+            <p>Trabajamos con plata elegida con cuidado, para piezas que acompañan por mucho tiempo.</p>
+          </div>
+          <div class="numbered-card reveal" data-reveal>
+            <span class="numbered-card-num">04</span>
+            <h3>Estilo Distintivo</h3>
+            <p>Para quienes buscan accesorios que hablen de su gusto, no solo un accesorio más.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COLECCIONES ============ -->
+    <section class="collections" id="colecciones">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Nuestras Colecciones</p>
+          <h2 class="section-title reveal" data-reveal>Piezas reales, <span class="text-gold">hechas para lucirse.</span></h2>
+          <p class="section-desc reveal" data-reveal>Un vistazo a algunas de nuestras piezas disponibles. Cada fotografía es de una joya real de nuestro catálogo.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card-media">
+              <img src="assets/img/producto-pulseras-perlas.jpg" alt="Pulseras de perlas cultivadas con detalles en coral y dorado, joyería real de Joyería de Plata" loading="lazy">
+              <span class="product-card-tag">01</span>
+            </div>
+            <div class="product-card-body">
+              <h3>Pulseras de Perlas</h3>
+              <p>Combinaciones delicadas de perlas cultivadas con acentos de color, para un look sutil y sofisticado.</p>
+              <a href="#" class="product-card-link js-whatsapp-link" data-wa-message="Hola, me interesa la pulsera de perlas. ¿Me das más información?" target="_blank" rel="noopener">Preguntar por esta pieza →</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card-media">
+              <img src="assets/img/producto-anillo-zafiro-aretes.jpg" alt="Anillo de plata con piedra central y aretes a juego, presentados en estuche, joyería real de Joyería de Plata" loading="lazy">
+              <span class="product-card-tag">02</span>
+            </div>
+            <div class="product-card-body">
+              <h3>Anillos &amp; Aretes</h3>
+              <p>Piezas con piedra central que capturan la luz — perfectas para looks que buscan destacar con elegancia.</p>
+              <a href="#" class="product-card-link js-whatsapp-link" data-wa-message="Hola, me interesa el set de anillo y aretes. ¿Me das más información?" target="_blank" rel="noopener">Preguntar por esta pieza →</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card-media">
+              <img src="assets/img/producto-pulsera-corazon-perlas.jpg" alt="Pulsera de perlas en forma de corazón con dije dorado, joyería real de Joyería de Plata" loading="lazy">
+              <span class="product-card-tag">03</span>
+            </div>
+            <div class="product-card-body">
+              <h3>Pulsera Corazón de Perlas</h3>
+              <p>Un diseño romántico con dije dorado, ideal para regalar o para lucir todos los días.</p>
+              <a href="#" class="product-card-link js-whatsapp-link" data-wa-message="Hola, me interesa la pulsera corazón de perlas. ¿Me das más información?" target="_blank" rel="noopener">Preguntar por esta pieza →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="services-cta reveal" data-reveal>
+          <p>¿Buscas algo distinto? Escríbenos y te ayudamos a encontrar la pieza ideal.</p>
+          <a href="#" class="btn btn-primary js-whatsapp-link" data-wa-message="Hola, busco una pieza en particular. ¿Me pueden ayudar?" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 1 ============ -->
+    <section class="parallax-banner">
+      <div class="parallax-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1920&q=80" alt="" data-parallax data-speed="0.3">
+      </div>
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Nuestra filosofía</p>
+        <h2 class="reveal" data-reveal>El detalle es lo que distingue a una joya.</h2>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="process" id="proceso">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>¿Cómo funciona?</p>
+          <h2 class="section-title reveal" data-reveal>Conseguir tu joya es <span class="text-gold">así de simple.</span></h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal" data-reveal>
+            <span class="process-step-num">01</span>
+            <h3>Explora</h3>
+            <p>Descubre nuestras colecciones y elige la pieza que más se identifique contigo.</p>
+          </div>
+          <div class="process-step reveal" data-reveal>
+            <span class="process-step-num">02</span>
+            <h3>Consulta por WhatsApp</h3>
+            <p>Escríbenos para conocer disponibilidad, detalles y opciones de tu joya.</p>
+          </div>
+          <div class="process-step reveal" data-reveal>
+            <span class="process-step-num">03</span>
+            <h3>Recibe tu Joya</h3>
+            <p>Coordinamos la entrega de tu pieza, lista para lucir o para regalar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 2 ============ -->
+    <section class="parallax-banner">
+      <div class="parallax-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=1920&q=80" alt="" data-parallax data-speed="0.3">
+      </div>
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Para regalar</p>
+        <h2 class="reveal" data-reveal>Un regalo que se queda para siempre.</h2>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Galería</p>
+          <h2 class="section-title reveal" data-reveal>Piezas <span class="text-gold">reales</span>, ya entregadas.</h2>
+          <p class="section-desc reveal" data-reveal>Un vistazo a joyas reales de nuestro catálogo.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--wide reveal" data-reveal>
+            <img src="assets/img/producto-pulseras-perlas.jpg" alt="Set de pulseras de perlas con detalles en coral, oro y perla negra" loading="lazy">
+            <span class="gallery-caption">Set de pulseras de perlas con detalles en coral y oro</span>
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/producto-anillo-zafiro-aretes.jpg" alt="Anillo con piedra central y aretes a juego en estuche de regalo" loading="lazy">
+            <span class="gallery-caption">Anillo y aretes en estuche de regalo</span>
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/producto-pulsera-corazon-perlas.jpg" alt="Pulsera de perlas en forma de corazón con dije dorado" loading="lazy">
+            <span class="gallery-caption">Pulsera corazón de perlas con dije dorado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal" data-reveal>Contacto</p>
+          <h2 class="section-title reveal" data-reveal>Encuentra tu <span class="text-gold">próxima joya</span></h2>
+          <p class="section-desc reveal" data-reveal>Escríbenos por WhatsApp o llena el formulario y te contactamos de inmediato para ayudarte a elegir la pieza ideal.</p>
+
+          <ul class="contact-list reveal" data-reveal>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.7.1.4 0 .8-.2 1L6.6 10.8Z"/></svg>
+              <a href="#" class="js-whatsapp-link" data-wa-message="Hola, me gustaría más información sobre Joyería de Plata." target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12.7 2 6V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6l-10 6.7ZM4 4h16a2 2 0 0 1 2 2L12 13 2 6a2 2 0 0 1 2-2Z"/></svg>
+              <span>Atención por catálogo y pedido, respuesta directa por WhatsApp</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" data-reveal id="contact-form">
+          <div class="form-row">
+            <label for="cf-name">Nombre</label>
+            <input type="text" id="cf-name" name="name" required placeholder="Tu nombre">
+          </div>
+          <div class="form-row">
+            <label for="cf-phone">Teléfono</label>
+            <input type="tel" id="cf-phone" name="phone" required placeholder="Tu número de contacto">
+          </div>
+          <div class="form-row">
+            <label for="cf-interest">Me interesa</label>
+            <select id="cf-interest" name="interest">
+              <option value="Pulseras de Perlas">Pulseras de Perlas</option>
+              <option value="Anillos y Aretes">Anillos y Aretes</option>
+              <option value="Pulsera Corazón de Perlas">Pulsera Corazón de Perlas</option>
+              <option value="Otra pieza / Duda general">Otra pieza / Duda general</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Mensaje</label>
+            <textarea id="cf-message" name="message" rows="3" placeholder="Cuéntanos qué buscas..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-form">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+            Enviar y Abrir WhatsApp
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <img src="assets/img/logo.svg" alt="Joyería de Plata" class="brand-logo brand-logo--footer">
+        </a>
+        <p>Diseños en plata, hechos para durar.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#colecciones">Colecciones</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#" class="js-whatsapp-link" data-wa-message="Hola, me gustaría más información sobre Joyería de Plata." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Joyería de Plata. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOTANTE ============ -->
+  <a href="#" class="whatsapp-float js-whatsapp-link" data-wa-message="Hola, me gustaría más información sobre Joyería de Plata." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 5.75 2.38 8.07 8.07 0 0 1 2.38 5.73c0 4.48-3.65 8.12-8.14 8.12a8.1 8.1 0 0 1-4.13-1.13l-.3-.17-3.12.82.83-3.04-.19-.31a8.06 8.06 0 0 1-1.24-4.31c0-4.48 3.65-8.09 8.16-8.09m-4.48 4.19c-.15 0-.4.06-.6.28-.21.23-.8.77-.8 1.89s.82 2.2.93 2.35c.11.15 1.6 2.5 3.95 3.44 1.94.79 2.35.63 2.77.6.42-.04 1.36-.55 1.55-1.09.19-.53.19-.99.13-1.09-.06-.09-.21-.15-.44-.26-.23-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.52.11-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.96-.35-1.83-1.13-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.11-.11.23-.27.35-.4.11-.14.15-.24.23-.4.08-.15.04-.3-.02-.42-.06-.11-.52-1.28-.72-1.74-.19-.46-.38-.4-.52-.4Z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

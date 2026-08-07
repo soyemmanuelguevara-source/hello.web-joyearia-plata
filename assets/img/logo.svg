@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Joyería de Plata</title>
+  <defs>
+    <linearGradient id="gemSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F4F6"/>
+      <stop offset="45%" stop-color="#C7C9CE"/>
+      <stop offset="100%" stop-color="#8E9096"/>
+    </linearGradient>
+    <linearGradient id="gemGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6E27A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#A9821A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Diamond mark -->
+  <g transform="translate(0,10)">
+    <polygon points="80,10 130,58 80,160 30,58" fill="url(#gemSilver)"/>
+    <polygon points="30,58 130,58 108,58 80,20 52,58" fill="#ffffff" opacity="0.35"/>
+    <polygon points="80,10 108,58 52,58" fill="#ffffff" opacity="0.55"/>
+    <polygon points="80,160 108,58 130,58" fill="#6f7176"/>
+    <polygon points="80,160 52,58 30,58" fill="#9a9ca1"/>
+    <line x1="30" y1="58" x2="130" y2="58" stroke="#5c5e63" stroke-width="1.5"/>
+    <line x1="80" y1="10" x2="80" y2="160" stroke="#5c5e63" stroke-width="1" opacity="0.4"/>
+    <circle cx="80" cy="58" r="3.5" fill="url(#gemGold)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(158,72)" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif">
+    <text x="0" y="0" font-size="46" font-weight="600" letter-spacing="1" fill="#F5F5F5">Joyer&#237;a</text>
+    <text x="0" y="46" font-size="46" font-weight="600" letter-spacing="1" fill="url(#gemGold)" font-style="italic">de Plata</text>
+  </g>
+</svg>
