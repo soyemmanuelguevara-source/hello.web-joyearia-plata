@@ -80,7 +80,7 @@
   /* ============ TYPEWRITER ============ */
   const typewriterEl = document.getElementById('typewriter');
   if (typewriterEl) {
-    const words = ['toda ocasión', 'regalar con significado', 'expresar tu estilo', 'acompañarte siempre'];
+    const words = ['toda ocasión', 'regalar con significado', 'un diseño hecho a tu medida', 'acompañarte siempre'];
     let wordIndex = 0, charIndex = 0, deleting = false;
 
     const tick = () => {

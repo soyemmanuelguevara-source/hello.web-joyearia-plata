@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="markTitle">
+  <title id="markTitle">Joyería de Plata</title>
+  <defs>
+    <linearGradient id="mkBand" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="26%" stop-color="#E8E9EC"/>
+      <stop offset="52%" stop-color="#B4B6BB"/>
+      <stop offset="74%" stop-color="#F2F3F5"/>
+      <stop offset="100%" stop-color="#A6A8AD"/>
+    </linearGradient>
+    <linearGradient id="mkGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6E27A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#A9821A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="160" height="160" rx="34" fill="#0A0A0C"/>
+  <rect x="3" y="3" width="154" height="154" rx="31" fill="none" stroke="url(#mkGold)" stroke-width="1.6" opacity="0.5"/>
+
+  <g transform="translate(0,6)">
+    <!-- Gem -->
+    <polygon points="55,44 80,44 80,74" fill="#9A9CA1"/>
+    <polygon points="80,44 105,44 80,74" fill="#7C7E84"/>
+    <polygon points="71,44 89,44 80,74" fill="#D9DADD"/>
+    <polygon points="66,26 55,44 71,44" fill="#EDEDEF"/>
+    <polygon points="94,26 105,44 89,44" fill="#C7C9CE"/>
+    <polygon points="66,26 94,26 89,44 71,44" fill="#FFFFFF"/>
+    <line x1="55" y1="44" x2="105" y2="44" stroke="#5C5E63" stroke-width="1.1"/>
+    <path d="M55,44 L52,52" stroke="url(#mkGold)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M105,44 L108,52" stroke="url(#mkGold)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Band -->
+    <circle cx="80" cy="102" r="30" fill="none" stroke="url(#mkBand)" stroke-width="7.5"/>
+    <circle cx="80" cy="102" r="33.8" fill="none" stroke="#5C5E63" stroke-width="0.8" opacity="0.55"/>
+    <circle cx="80" cy="102" r="26.2" fill="none" stroke="#5C5E63" stroke-width="0.8" opacity="0.55"/>
+    <path d="M57,83 A30,30 0 0 1 73,73" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+  </g>
+</svg>
